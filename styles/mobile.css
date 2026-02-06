@@ -1,0 +1,150 @@
+@media (max-width: 768px) {
+  header.top {
+    padding: 1.25rem 1.25rem;
+  }
+
+  section.hero {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 2rem 1.25rem 1.5rem;
+  }
+
+  section.hero > div:nth-child(2) {
+    order: -1;
+    width: min(20rem, 100%);
+    aspect-ratio: 1 / 1;
+    height: auto;
+    margin: 0 auto 1.25rem;
+    position: relative;
+    overflow: visible;
+    isolation: isolate;
+  }
+
+  section.hero > div:nth-child(2) .content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  section.hero > div:nth-child(2) .content img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    max-width: none;
+    height: auto;
+  }
+
+  section.hero > div:nth-child(2) .content img[src$="ellipse.svg"] {
+    width: 86%;
+    z-index: 1;
+  }
+
+  section.hero > div:nth-child(2) .content img[src$="patins-image.png"] {
+    width: 108%;
+    z-index: 3;
+    left: 52%;
+    top: 52%;
+  }
+
+  section.hero > div:nth-child(2) .content img[src$="stars-1.svg"] {
+    width: clamp(18px, 6vw, 28px);
+    z-index: 4;
+    left: 18%;
+    top: 45%;
+  }
+
+  section.hero > div:nth-child(2) .content img[src$="stars-2.svg"] {
+    width: clamp(26px, 9vw, 40px);
+    z-index: 4;
+    left: 84%;
+    top: 30%;
+  }
+
+  section.hero h1 {
+    max-width: 18rem;
+    margin: 0 auto;
+    font-size: 2.25rem;
+    line-height: 1.1;
+  }
+
+  section.hero h1 div {
+    overflow: hidden;
+    height: 3.4rem;
+  }
+
+  section.hero h1 div span,
+  section.hero h1 div strong {
+    line-height: 1.1;
+    display: block;
+  }
+
+  section.hero .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  section.hero .buttons .button.buy {
+    width: min(18rem, 100%);
+    justify-content: center;
+    padding: 1rem 1.75rem;
+    border-radius: 999px;
+  }
+
+  section.hero .buttons .button.play {
+    justify-content: center;
+  }
+
+  section.hero .buttons .button.play span {
+    padding: 1rem;
+  }
+
+  .banner {
+    padding-block: 1.5rem;
+  }
+
+  .banner .rolling {
+    gap: 1rem;
+  }
+
+  section.gallery {
+    padding: 2.5rem 1.25rem;
+  }
+
+  section.gallery .content {
+    grid-template-areas:
+      "A"
+      "B"
+      "C"
+      "D";
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  section.gallery .content figure > img {
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+
+  footer {
+    padding: 3rem 1.25rem 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  footer nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  footer .social-links {
+    justify-content: center;
+    gap: 1rem;
+  }
+}

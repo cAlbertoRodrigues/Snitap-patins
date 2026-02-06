@@ -12,7 +12,6 @@
     .rolling {
         display: flex;
         gap: 1.5rem;
-
         animation: rolling 2s linear infinite;
     }
 
@@ -24,8 +23,7 @@
         );
         background-size: 400%;
         background-position: 0% 50%;
-
-        animation: bg-gradient-animate 20s ease infinite
+        animation: bg-gradient-animate 20s ease infinite;
     }
 }
 

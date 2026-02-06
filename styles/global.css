@@ -1,3 +1,4 @@
+/* Global resets and variables */
 *, *::after, *::before {
     margin: 0;
     padding: 0;
@@ -17,12 +18,11 @@
     --background: #FAFAFA;
 
     --ff-base: "Montserrat", sans-serif;
-    
+
     --text-sm: 0.875rem;
     --text-base: 1rem;
     --text-lg: 2.5rem;
     --text-xl: 4rem;
-    
 }
 
 html, button {
